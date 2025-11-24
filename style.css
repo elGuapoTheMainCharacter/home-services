@@ -2,7 +2,7 @@ body{
   background: cyan;
 }
 .header {
-  background-color: grey;
+  background:linear-gradient(159deg, white, black);
   display: flex;
   padding: 10px;
   position: sticky;
@@ -28,12 +28,13 @@ body{
 }
 .searchSection button{
   background-color: lightblue;
-  border-radius: 50px
+  border-radius: 50px;
+  
 }
 .searchSection input{
   border-radius: 50px;
 }
-.logInBtn{
+.homeLogInBtn{
   background-color: green;
   position:absolute;
   right:20px;
@@ -60,12 +61,14 @@ body{
   border-radius: 20px;
   padding: 5px;
   color:white;
+  width:200px;
 }
 .serviceDescription{
   font-size: 20px;
 }
 .bodyWrapper{
   background-color: lightblue;
+  width:100%;
 }
 footer{
   text-align: center;
@@ -85,3 +88,27 @@ footer{
 .companyStuff a{
   color:black;
 }
+.registeAJob{
+  width:50%;
+  background:linear-gradient(159deg, white, black);;
+  color:white;
+  height: 100px; 
+  border-radius: 50px;
+  font-size: 20px;
+}
+.seviceCard img{
+  border-radius: 50px;
+}
+.goBackBtn,#signUp,#signIn{
+  width:20%;
+  background:linear-gradient(159deg, white, black);;
+  color:white;
+  height: 60px; 
+  border-radius: 50px;
+  font-size: 20px;
+}l
+
+.logInInputArea{
+  display: flex;
+  justify-content: center;
+  }
