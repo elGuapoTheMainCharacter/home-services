@@ -3,28 +3,51 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>log in</title>
   <link rel="stylesheet" href="style.css">
-  <title>Contact Worker</title>
+  <style>
+    body{
+      background: white;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
-  <h1>
-    Contact Worker <p id="workerName"></p>
-  </h1>
-  <label for="clientName">Name:</label>
-  <input id="clientName" type="text" placeholder="Name">
-  <br>
-  <label for="clientSurname">Surname:</label>
-  <input id="clientSurname" type="text" placeholder="surname">
-  <br>
-  <label for="clientMail">Email:</label>
-  <input id="clientMail" type="mail" placeholder="email">
-  <br>
-  <label for="clientBrief">Brief:</label>
-  <input id="clientBrief" type="text" placeholder="brief">
-  <br>
-  <textarea width="100px" height="100px" placeholder="What is your issue..."></textarea>
-  <br>
-  <button id="submitBtn">Submit</button>
+  <div class="contactFormBody">
+    <h1 style="color: green; text-align: center;">SideHustle</h1>
+    <h2 style="background-color: lightgreen;">Contact Worker</h2>
+    <div class="names">
+      <div class="firstName">
+        <label for="firstName">First Name</label>
+        <input id="firstName" type="text" placeholder="John">
+      </div>
+      <div class="lastName">
+        <label for="lasttName">Last Name</label>
+        <input id="lastName" type="text" placeholder="Richards">
+      </div>
+    </div>
+    <div class="email">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="example@example.com">
+    </div>
+    <div class="phone">
+      <label for="phone">Phone</label>
+      <input id="phone" type="text" placeholder="Phone Number">
+    </div>
+    <div class="reason">
+      <label for="reason">Reason for contacting</label>
+      <input id="reason" type="text" placeholder="e.g tap leakage">
+    </div>
+    <div class="problem">
+    <label>Brief</label>
+    <textarea placeholder="Brief of the problem..,"></textarea>
+    </div>
+    <br>
+    <br>
+    <button class="submitProblem" style="width: 400px; background-color: green;">Submit</button>
+  </div> 
   <script src="script.js"></script>
 </body>
-</html>
+      </html>
+  
