@@ -21,8 +21,8 @@ if(clickListener){
 let goBackBtn=document.getElementById("goBackBtn");
     if(goBackBtn){
         goBackBtn.addEventListener('click',function(){
-            // window.location.href="index.html"; // Old code
-            window.history.back();
+            window.location.href="index.html"; // Old code
+            //window.history.back();
     });
 }
 
@@ -103,10 +103,11 @@ if (logInBtn) {
     if ((usernameField.value === username) && (passwordField.value === password)) {
       sessionStorage.setItem("isLoggedIn", true);
       isLoggedIn = true;
-      window.history.back(); 
+      //window.history.back(); 
+       window.location.href = "index.html";
     } else {
       document.getElementById("logginMsg").innerText = "Incorrect details. Try Again";
     }
   });
-                 }
-              
+        }
+                 
