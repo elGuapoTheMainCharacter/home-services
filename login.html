@@ -5,32 +5,49 @@
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
   <title>log in</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      background: orange;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
 </head>
 <body>
-  <div class="loginHeading">
-    <h1>
-      Log in
-    </h1>
-  </div>
-  <div class="logInBody">
-    <div class="logInInputArea">
-      <label for="usernameField">Username:</label>
-      <input id="usernameField" placeholder="Username" type="text">
-      <br>
-      <label for="passwordField">Password:</label>
-      <input id="passwordField" placeholder="password" type="password">
+  <div class="wholeLogin">
+    <div class="loginHeading">
+      <h1 class="heading">
+        Log In
+      </h1>
     </div>
+    <div class="logInBody">
+      <div class="logInInputArea">
+        <label for="usernameField"><strong>Username</strong></label>
+        <input style="width: 270px;" id="usernameField" placeholder="Username" type="text">
+        <br>
+        <label for="passwordField"><strong>Password</strong></label>
+        <input style="width: 270px;" id="passwordField" placeholder="password" type="password">
+      </div>
+      <p id="logginMsg" style="color: red"></p>
       <br>
+      <button class="signIn" id="signIn">Sign In</button>
+      <br>
+      <a id="forgotPass" href="#">Forgot Password</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <p><strong>New User?</strong></p>
+      <button class="signUp" id="signUp">Sign Up</button>
+      <br>
+      
+      <p>To log in username and password are <strong>"main"</strong></p>
+    </div>
     <button class="goBackBtn" id="goBackBtn">Back</button>
-    
-    <a id="forgotPass" href="#">Forgot Password</a>
-    
-    <button class="signIn" id="signIn">Sign In</button>
-    <button class="signUp" id="signUp">Sign Up</button>
-    <br>
-    <p id="logginMsg"></p>
-    <p>To log in username and password are <strong>"main"</strong></p>
+    <script src="script.js"></script>
   </div>
-  <script src="script.js"></script>
 </body>
-</html>
+  </html>
+  
