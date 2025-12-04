@@ -88,11 +88,11 @@ footer{
 .companyStuff a{
   color:black;
 }
-.registeAJob{
-  width:50%;
-  background:linear-gradient(159deg, white, black);;
+.registerAJob{
+  width:40%;
+  background:linear-gradient(159deg, white, black);
   color:white;
-  height: 100px; 
+  height: 60px; 
   border-radius: 50px;
   font-size: 20px;
 }
@@ -100,15 +100,51 @@ footer{
   border-radius: 50px;
 }
 .goBackBtn,#signUp,#signIn{
-  width:20%;
-  background:linear-gradient(159deg, white, black);;
+  width:100px;
+  background:linear-gradient(159deg, white, black);
   color:white;
-  height: 60px; 
+  height: 30px; 
   border-radius: 50px;
   font-size: 20px;
-}l
-
+}
+.wholeLogin{
+  background: white;
+  border-radius: 50px;
+  height: 550px;
+  width: 400px;
+  text-align: center;
+  margin-top: 50px;
+  padding-top: 10px;
+}
+#usernameField,#passwordField{
+  border-radius: 50px;
+}
 .logInInputArea{
-  display: flex;
+  display: grid;
+  gap: 0.5px;
   justify-content: center;
-  }
+}
+#signIn{
+  width: 270px;
+  color: black;
+  background: linear-gradient(159deg, cyan, black);
+}
+#signUp{
+  color: black;
+  background: white;
+}
+.contactFormBody{
+  display: grid;
+}
+.names{
+  display: flex;
+  gap: 4px;
+}
+.firstName,.lastName,.fixerEmail,.fixerPhone,.reason,.problem{
+  display: grid;
+}
+textarea{
+  height: 100px;
+}
+
+    
