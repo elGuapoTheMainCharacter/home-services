@@ -3,7 +3,7 @@
 <html>
 <head>
   <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
-  <title>log in</title>
+  <title>Contact Worker</title>
   <link rel="stylesheet" href="style.css">
   <style>
     body{
@@ -23,31 +23,31 @@
         <input id="firstName" type="text" placeholder="John">
       </div>
       <div class="lastName">
-        <label for="lasttName">Last Name</label>
+        <label for="lastName">Last Name</label>
         <input id="lastName" type="text" placeholder="Richards">
       </div>
     </div>
-    <div class="email">
-      <label for="email">Email</label>
-      <input id="email" type="email" placeholder="example@example.com">
+    <div class="fixerEmail">
+      <label for="fixerEmail">Email</label>
+      <input id="fixerEmail" type="email" placeholder="example@example.com">
     </div>
-    <div class="phone">
-      <label for="phone">Phone</label>
-      <input id="phone" type="text" placeholder="Phone Number">
+    <div class="fixerPhone">
+      <label for="fixerPhone">Phone</label>
+      <input id="fixerPhone" type="text" placeholder="Phone Number">
     </div>
     <div class="reason">
       <label for="reason">Reason for contacting</label>
       <input id="reason" type="text" placeholder="e.g tap leakage">
     </div>
     <div class="problem">
-    <label>Brief</label>
-    <textarea placeholder="Brief of the problem..,"></textarea>
+    <label for="brief">Brief</label>
+    <textarea id="brief" placeholder="Brief of the problem..,"></textarea>
     </div>
     <br>
-    <br>
-    <button class="submitProblem" style="width: 400px; background-color: green;">Submit</button>
+    <p id="responseSent" style="color: red"><strong></strong></p>
+    <button class="submitProblem" id="submitProblem" style="width: 400px; background-color: green;">Submit</button>
   </div> 
   <script src="script.js"></script>
 </body>
-      </html>
+        </html>
   
