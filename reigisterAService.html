@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Register A Service</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body{
+      background: white;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="contactFormBody">
+    <h1 style="color: green; text-align: center;">SideHustle</h1>
+    <h2 style="background-color: lightgreen;">Register A Service</h2>
+    <div class="names">
+      <div class="firstName">
+        <label for="firstNameWorker">First Name</label>
+        <input id="firstNameWorker" type="text" placeholder="John">
+      </div>
+      <div class="lastName">
+        <label for="lasttNameWorker">Last Name</label>
+        <input id="lastNameWorker" type="text" placeholder="Richards">
+      </div>
+    </div>
+    <div class="email">
+      <label for="email">Email</label>
+      <input id="email" type="email" placeholder="example@example.com">
+    </div>
+    <div class="phone">
+      <label for="phone">Phone</label>
+      <input id="phone" type="text" placeholder="Phone Number">
+    </div>
+    <div class="reason">
+      <label for="reason">Which service do you offer</label>
+      <select class="category" id="category">
+        <option value="Nails">Nails</option>
+        <option value="Moving">Moving</option>
+        <option value="Tutor">Tutor</option>
+        <option value="Plumber">Plumber</option>
+        <option value="Carpentry">Carpentry</option>
+        <option value="Gardening">Gardening</option>
+      </select>
+    </div>
+    <div class="problem">
+      <label>Years of experience</label>
+      <input class="serviceExperience" type="number">
+    </div>
+    <div class="image">
+      <label for="image">Profile Image</label>
+      <input id="image" type="file" accept="image/*">
+    </div>
+    <br>
+    <button class="submitService" id="submitService" style="width: 400px; background-color: green;">Submit</button>
+  </div>
+  <button class="goBackBtn" id="goBackBtn">Back</button>
+  <script src="script.js"></script>
+</body>
+  </html>
+  
